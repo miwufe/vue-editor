@@ -1,0 +1,63 @@
+{
+  "name": "vue-editor",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "npm run electron:serve",
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "electron:build": "vue-cli-service electron:build",
+    "electron:serve": "vue-cli-service electron:serve",
+    "postinstall": "electron-builder install-app-deps",
+    "postuninstall": "electron-builder install-app-deps"
+  },
+  "description": "this is a sample editor created by electron and vue",
+  "author": "yaotaiyang",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "core-js": "^3.6.5",
+    "monaco-editor": "^0.23.0",
+    "nprogress": "^0.2.0",
+    "vue": "^2.6.10",
+    "vue-router": "^3.0.3",
+    "vuex": "^3.0.1",
+    "vuex-persist": "^2.2.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^4.1.0",
+    "@vue/cli-plugin-eslint": "^4.1.0",
+    "@vue/cli-service": "^4.1.0",
+    "@vue/eslint-config-standard": "^4.0.0",
+    "babel-eslint": "^10.0.3",
+    "electron": "^12.0.6",
+    "electron-devtools-installer": "^3.1.0",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "less": "^3.12.2",
+    "less-loader": "^7.0.2",
+    "monaco-editor-webpack-plugin": "^3.0.1",
+    "postcss-pxtorem": "^4.0.1",
+    "vue-cli-plugin-electron-builder": "~2.0.0",
+    "vue-template-compiler": "^2.6.10"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "rules": {},
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
+}
