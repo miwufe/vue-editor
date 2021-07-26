@@ -1,3 +1,5 @@
+# vue-editor
+基于Vue+Electron的editor
 ## Project setup
 
 ```
